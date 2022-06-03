@@ -24,6 +24,7 @@ user.loc[9] = ['married', False]
 user.loc[10] = ['last name', 'Nikitin']
 user.loc[11] = ['full_name', 'Konstantin Nikitin']
 user.loc[12] = ['phone', '89035529619']
+user.loc[13] = ['university', 'IRU']
 
 site_action = SelPath.Sel_Mod(workflow, user)
 
