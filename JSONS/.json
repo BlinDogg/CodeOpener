@@ -1,0 +1,71 @@
+{
+	"tasks" : [
+		{
+			"name" : "Open Link",
+			"number" : 1,
+			"parameters" : [
+				{
+					"url" : "https://app.gingkowriter.com/signup"
+				}
+			],
+			"on-success" : 2,
+			"on-error" : 4
+		},
+		{
+			"name" : "Set Fields",
+			"number" : 2,
+			"parameters" : [
+				{
+					"parameter" : "email",
+					"id" : "signup-email"
+				},
+				{
+					"parameter" : "password",
+					"id" : "signup-password"
+				},
+				{
+					"parameter" : "news-checkbox",
+					"id" : "email-optin"
+				}
+			],
+			"on-success" : 3,
+			"on-error" : 4
+		},
+		{
+			"name" : "Press Button",
+			"number" : 3,
+			"parameters" : [
+				{
+					"name" : "Start Writing",
+					"id" : "signup-button"
+				}
+			],
+			"on-success" : 5,
+			"on-error" : 4
+		},
+		{
+			"name" : "Return Error",
+			"number" : 4,
+			"parameters" : [
+				{
+					"text" : "Error Occured"
+				}
+			],
+			"on-success" : 0
+		},
+		{
+			"name" : "Finish",
+			"number" : 5,
+			"parameters" : [
+				{
+					"text" : "Registration successfully finished!"
+				}
+			],
+			"on-success" : 0
+		},
+		{
+			"name" : "fuck",
+			"number" : 500
+		}
+	]
+}

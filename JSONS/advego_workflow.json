@@ -1,0 +1,99 @@
+{
+	"tasks" : [
+		{
+			"name" : "Open Link",
+			"number" : 1,
+			"parameters" : [
+				{
+					"url" : "https://advego.com//join"
+				}
+			],
+			"on-success" : 2,
+			"on-error" : 4
+		},
+		{
+			"name" : "Set Fields",
+			"number" : 2,
+			"parameters" : [
+				{
+					"parameter" : "email",
+					"id" : "join-form-email"
+				},
+				{
+					"parameter" : "first name",
+					"id" : "join-form-name"
+				}
+			],
+			"on-success" : 3,
+			"on-error" : 4
+		},
+		{
+			"name" : "Press Button",
+			"number" : 3,
+			"parameters" : [
+				{
+					"name" : "Fuck",
+					"id" : "join_ok"
+				}
+			],
+			"on-success" : 6,
+			"on-error" : 4
+		},
+		{
+			"name" : "Return Error",
+			"number" : 4,
+			"parameters" : [
+				{
+					"text" : "Error Occured"
+				}
+			],
+			"on-success" : 0
+		},
+		{
+			"name" : "Finish",
+			"number" : 5,
+			"parameters" : [
+				{
+					"text" : "Registration successfully finished!"
+				}
+			],
+			"on-success" : 0
+		},
+		{
+			"name" : "Press Button",
+			"number" : 6,
+			"parameters" : [
+				{
+					"name" : "Fuck",
+					"id" : "join_ok"
+				}
+			],
+			"on-success" : 7,
+			"on-error" : 4
+		},
+		{
+			"name" : "Press Button",
+			"number" : 7,
+			"parameters" : [
+				{
+					"name" : "Fuck",
+					"id" : "join_ok"
+				}
+			],
+			"on-success" : 8,
+			"on-error" : 4
+		},
+		{
+			"name" : "Press Button",
+			"number" : 8,
+			"parameters" : [
+				{
+					"name" : "Fuck",
+					"id" : "join_ok"
+				}
+			],
+			"on-success" : 5,
+			"on-error" : 4
+		}
+	]
+}

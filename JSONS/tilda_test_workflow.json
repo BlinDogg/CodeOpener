@@ -1,0 +1,37 @@
+{
+	"tasks":[
+		{	"name": "Open Link",
+			"number": 1,
+			"on-success": 2,
+			"on-error": 13,
+			"parameters": [{"url": "http://project5665950.tilda.ws/"}]
+		},
+		{	"name": "Set Fields",
+			"number": 2,
+			"on-success": 3,
+			"on-error": 13,
+			"parameters": [
+				{"parameter": "email", "name": "email"},
+				{"parameter": "full_name", "name": "full_name"},
+				{"parameter": "phone", "name": "phone"},
+				{"parameter": "age", "name": "sex_times"}
+			]
+		},
+		{	"name": "Press Button",
+			"number": 3,
+			"on-success": 12,
+			"on-error": 13,
+			"parameters": [{"parameter": "Create an account", "css": "div[class = 'tn-form__submit']"}]
+		},
+		{	"name": "Finish",
+			"number": 12,
+			"on-success": 0,
+			"parameters": [{"text":"Registration successfully finished!"}]
+		},
+		{	"name": "Return Error",
+			"number": 13,
+			"on-success": 0,
+			"parameters": [{"text":"Error Occured"}]
+		}
+	]
+}

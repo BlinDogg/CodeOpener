@@ -1,0 +1,56 @@
+{
+	"tasks":[
+		{	"name": "Open Link",
+			"number": 1,
+			"on-success": 50,
+			"on-error": 13,
+			"parameters": [{"url": "https://www.dropbox.com/login#"}]
+		},
+		{	"name": "Press Button",
+			"number": 50,
+			"on-success": 3,
+			"on-error": 13,
+			"parameters": [{"class": "login-register-switch"}]
+		},
+		{	"name": "Agree to Terms",
+			"number": 100,
+			"on-success": 3,
+			"on-error": 13,
+			"parameters": [{"name": "tos_agree"}]
+		},
+		{
+			"name": "Click and Set",
+			"number": 3,
+			"on-success":4,
+			"on-error":13,
+			"parameters": [
+				{"parameter": "first name", "name": "fname"},
+				{"parameter": "last name", "name": "lname"},
+				{"parameter": "email", "name": "email"},
+				{"parameter": "password", "name": "password"}
+				]
+		},
+		{	"name": "Press Button",
+			"number": 4,
+			"on-success": 5,
+			"on-error": 13,
+			"parameters": [{"name": "tos_agree"}]
+		},
+		{	"name": "Press Button",
+			"number": 5,
+			"on-success": 12,
+			"on-error": 13,
+			"parameters": [{"span": "Создать аккаунт"}]
+		},
+		{	"name": "Finish",
+			"number": 12,
+			"on-success": 0,
+			"parameters": [{"text":"Registration successfully finished!"}]
+		},
+		{	"name": "Return Error",
+			"number": 13,
+			"on-success": 0,
+			"parameters": [{"text":"Error Occured"}]
+		}
+	]
+}

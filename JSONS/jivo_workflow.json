@@ -1,0 +1,35 @@
+{
+	"tasks":[
+		{	"name": "Open Link",
+			"number": 1,
+			"on-success": 2,
+			"on-error": 13,
+			"parameters": [{"url": "https://app.jivo.ru/signup.html"}]
+		},
+		{	"name": "Set Fields",
+			"number": 2,
+			"on-success": 3,
+			"on-error": 13,
+			"parameters": [
+				{"parameter": "email", "css": "input[data-qa-id='signup-account-email-input']"},
+				{"parameter": "password", "css": "input[data-qa-id='signup-account-password-input']"}
+			]
+		},
+		{	"name": "Press Button",
+			"number": 3,
+			"on-success": 12,
+			"on-error": 13,
+			"parameters": [{"button": "Продолжить"}]
+		},
+		{	"name": "Finish",
+			"number": 12,
+			"on-success": 0,
+			"parameters": [{"text":"Registration successfully finished!"}]
+		},
+		{	"name": "Return Error",
+			"number": 13,
+			"on-success": 0,
+			"parameters": [{"text":"Error Occured"}]
+		}
+	]
+}
